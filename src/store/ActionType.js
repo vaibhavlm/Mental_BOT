@@ -1,0 +1,4 @@
+export const TOGGLE_SELECT = 'TOGGLE_SELECT';
+export const CHANGE_USERNAME = 'CHANGE_USERNAME';
+export const CHANGE_BOTNAME = 'CHANGE_BOTNAME';
+

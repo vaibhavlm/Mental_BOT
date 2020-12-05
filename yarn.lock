@@ -1309,6 +1309,57 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@progress/kendo-popup-common@^1.2.2":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-popup-common/-/kendo-popup-common-1.7.0.tgz#d0d29dbc5eacdaba8803aa3d0f69f8a8ad05dbff"
+  integrity sha512-KxPIXDkirDpJaF/UWFKbe8QpbO5CwdQH/HyNT5Fj1qZb25YaO68VZCisls2qkcEVPHBlXesDcN3QJlt4vJ6tJw==
+
+"@progress/kendo-react-buttons@^3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-buttons/-/kendo-react-buttons-3.16.0.tgz#d9d2a0c67b443ba99794a16114cb1fe2e5f6b601"
+  integrity sha512-poiW9K5kz1S0bhlRb9R1aFNE1beWwE62s7q4XVelttD9/PsT13V0E1oWdprWdwnAo7DD2ZdKyB65gK5cMu7U5Q==
+  dependencies:
+    "@progress/kendo-react-common" "3.16.0"
+    "@progress/kendo-react-popup" "3.16.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-common@3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-common/-/kendo-react-common-3.16.0.tgz#c8aae3e7b7dcdfb4e5f054a9fec120bc7c8da6fc"
+  integrity sha512-auKiYIPf7YgkPZI2VOJgRfCHQInt0mCch5Axyi+0kGfw2lJOl1sWBizQc51x8PQ4q11UzZPguVWplLlv0MjrQw==
+  dependencies:
+    "@telerik/kendo-draggable" "^2.1.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-conversational-ui@^3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-conversational-ui/-/kendo-react-conversational-ui-3.16.0.tgz#2692120bfaff29f0ff3eda7b6c2bac60c79a3ca7"
+  integrity sha512-RzV2OfWcaFBp/cshU9RFVeLZtB4d8OzcDBxo7jNjWfrrMFpNlIYnJgMZBSP2yNfv4O3ev6c0ZxxNz3z77nPikQ==
+  dependencies:
+    "@progress/kendo-react-common" "3.16.0"
+
+"@progress/kendo-react-intl@^3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-intl/-/kendo-react-intl-3.16.0.tgz#db2fef521d0cba49d467ad2f1ab9e6db88c1df8c"
+  integrity sha512-STFnP7jNdF66eiENc9FazXFKELu84kwvgSYPAQp6pfto9ourU9kc54M5wh02/HAW3FPUwAYFm5SOB3GZRFXNsg==
+  dependencies:
+    "@telerik/kendo-intl" "^2.1.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-popup@3.16.0":
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-react-popup/-/kendo-react-popup-3.16.0.tgz#f1c38c682a57468896877241d60afc7d0fbf1187"
+  integrity sha512-myr2vApYcrBuoi4OqtGPow9KOcyW8dlU7yQ7yfSHABAzi49QktQgQNxYQNRqDEPPqfTioQFnjYuMKZeTNn8I2g==
+  dependencies:
+    "@progress/kendo-popup-common" "^1.2.2"
+    "@progress/kendo-react-common" "3.16.0"
+    prop-types "^15.6.0"
+
+"@progress/kendo-theme-default@^4.22.0":
+  version "4.22.0"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-theme-default/-/kendo-theme-default-4.22.0.tgz#0efacf6075875d65fd440f6191cf7336dd47c4a9"
+  integrity sha512-t8/fe4sf9IspR/iDugvLGxBeP1rmtON/W7rOZ5qd1E9HP/JzjdtK4oPSoBre6S3SyZRGX9AY08Wwo99QhHvrXw==
+
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.3.tgz#5405ee8e444ed212db44e79351f0c70a582aae25"
@@ -1416,6 +1467,16 @@
     "@svgr/plugin-jsx" "^4.3.3"
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
+
+"@telerik/kendo-draggable@^2.1.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-draggable/-/kendo-draggable-2.2.0.tgz#651ee63e8978c3c9d8548a3ece37280ce5944863"
+  integrity sha512-78ofOzRpisqPjG51LfLQ4FEWoGJXs4PkzyJSdVklyFw6gtAnj/T6dp7mHIMj8BivVkN9FjNgf4Eo/mdYs9fusQ==
+
+"@telerik/kendo-intl@^2.1.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@telerik/kendo-intl/-/kendo-intl-2.2.0.tgz#7c88cd30c36fa6268afa4f43de5574950f8858ac"
+  integrity sha512-NYBXSzknwOZjdEWB62a5xXBuzNzHatNTT+0n7NvIotEyHl6wpcfVnqOkQ2DnrwN9VI0YzhPT9hbAhc+njUxQpw==
 
 "@testing-library/dom@*":
   version "7.24.1"
@@ -8392,7 +8453,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==

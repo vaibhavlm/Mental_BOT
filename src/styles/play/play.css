@@ -1,0 +1,31 @@
+.playscreen{
+  min-height: 100vh;
+}
+
+.play-heading{
+   font-family: monospace;
+   color: whitesmoke;
+   letter-spacing: .15em;
+}
+
+.play-text{
+  padding-top: 100px;
+}
+
+#pills-halooflove-tab{
+  color: whitesmoke !important;
+}
+
+#pills-lettinggo-tab{
+  color: whitesmoke !important;
+}
+
+
+#pills-observeyourbreath-tab{
+  color: whitesmoke !important;
+}
+
+#pills-anchoryourself-tab{
+  color: whitesmoke !important;
+}
+

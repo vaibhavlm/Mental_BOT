@@ -1,0 +1,184 @@
+
+   .halooflove-caption{
+    color: white;
+    font-family: cursive;
+}
+
+  #pills-halooflove-para{
+    min-height: 50px;
+    padding-bottom: 50px !important;
+  }
+  
+  #pills-halooflove-para::before{
+    content: '';
+    color: whitesmoke;
+    letter-spacing: .1em;
+    font-weight: 500;
+    animation: rotator1 infinite 120s;
+  }
+  
+  @keyframes rotator1{
+    0%{
+      content: 'take a deep breath';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    8%{
+      content: 'feel your love';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    16%{
+      content: 'gentle';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    24%{
+      content: 'kind';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    32%{
+      content: 'glowing';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    40%{
+      content: 'breathe into it';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    48%{
+      content: 'make it glow bright';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    56%{
+      content: 'brighter';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    64%{
+      content: 'who will you send it to?';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    72%{
+      content: 'a ray of love';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    80%{
+      content: 'like a warm hug';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    88%{
+      content: 'feel it around you';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    94%{
+      content: 'you are glowing';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+     100%{
+      content: 'you are love';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    
+  }
+  
+  
+  .halooflove-box {
+    position: relative;
+    display: block;
+    width: 80px;
+    margin: 60px auto;
+    height: 150px;
+  }
+  
+  .halooflove-box .delay1 {
+    animation: waves infinite linear .7s forwards;
+    animation-delay: .1s;
+  }
+  
+  .halooflove-box .delay2 {
+    animation: waves infinite linear 1.3s forwards,
+  }
+  
+  .halooflove-box .delay3 {
+    animation: waves infinite linear 1.9s forwards;
+  }
+  
+  .halooflove-box .delay4 {
+    animation: waves infinite linear 2.4s forwards;
+  }
+  
+  .svg-box {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .halooflove-circle {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: pink;
+    margin: 10px;
+    transition: 5s ease;
+    position: absolute;
+    top: 0px
+  }
+  
+  @keyframes waves {
+    0%{
+      transform: scale(1);
+      opacity: 1;
+    }
+    25%{
+        transform: scale(2);
+        opacity: 0.75;
+    }
+    50%{
+        transform:scale(3);
+        opacity: 0.50;
+    }
+    100%{
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bloop {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }

@@ -1,0 +1,185 @@
+
+    .anchoryourself-caption{
+        color: white;
+        font-family: cursive;
+   }
+
+  #pills-anchoryourself-para{
+    min-height: 50px;
+    padding-bottom: 70px !important;
+  }
+  
+  #pills-anchoryourself-para::before{
+    content: '';
+    color: whitesmoke;
+    letter-spacing: .1em;
+    font-weight: 500;
+    animation: rotator infinite 120s;
+    z-index: 20;
+  }
+  
+  @keyframes rotator{
+    0%{
+      content: 'this is your moment of calm';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    8%{
+      content: 'exhale slowly';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    16%{
+      content: 'take a deep breath';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    24%{
+      content: 'anchor yourself to the moment';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    32%{
+      content: 'your mind and body to the present';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    40%{
+      content: 'listen to the sounds around you';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    48%{
+      content: 'beyond your thoughts and moments';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    56%{
+      content: 'let it all go';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    64%{
+      content: 'breathe in';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    72%{
+      content: 'notice the smell around you';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    80%{
+      content: 'feel the texture of your cloth';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    88%{
+      content: 'live in the moment';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    94%{
+      content: 'you are in the present';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+     100%{
+      content: 'enjoy your surrounding';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    
+  }
+  
+  
+  .anchoryourself-box {
+    position: relative;
+    display: block;
+    width: 80px;
+    margin: 60px auto;
+    height: 150px;
+  }
+  
+  .anchoryourself-box .delay1 {
+    animation: waves infinite  linear;
+    animation-delay: .2s;
+  }
+  
+  .anchoryourself-box .delay2 {
+    animation: waves infinite linear .7s forwards,
+  }
+  
+  .anchoryourself-box .delay3 {
+    animation: waves infinite  linear 1.3s forwards;
+  }
+  
+  .anchoryourself-box .delay4 {
+    animation: waves infinite  linear 1.9s forwards;
+  }
+  
+  .svg-box {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .anchoryourself-circle {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: rgb(179, 243, 160);
+    margin: 10px;
+    transition: 5s ease;
+    position: absolute;
+    top: 0px
+  }
+  
+  @keyframes waves {
+    0%{
+      transform: scale(2);
+      opacity: 1;
+    }
+    25%{
+        transform: scale(4);
+        opacity: 0.75;
+    }
+    50%{
+        transform:scale(6);
+        opacity: 0.50;
+    }
+    100%{
+      transform: scale(8);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bloop {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }

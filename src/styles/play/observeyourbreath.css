@@ -1,0 +1,185 @@
+
+    .observeyourbreath-caption{
+        color: white;
+        font-family: cursive;
+   }
+
+  #pills-observeyourbreath-para{
+    min-height: 50px;
+    padding-bottom: 70px !important;
+  }
+  
+  #pills-observeyourbreath-para::before{
+    content: '';
+    color: whitesmoke;
+    letter-spacing: .1em;
+    font-weight: 500;
+    animation: rotator infinite 120s;
+    z-index: 20;
+  }
+  
+  @keyframes rotator{
+    0%{
+      content: 'place one hand on your chest';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    8%{
+      content: 'place the other on your belly';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    16%{
+      content: 'breath in slowly';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    24%{
+      content: 'breath out through your lips';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    32%{
+      content: 'notice the hand on your stomach rising';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    40%{
+      content: 'pull in your stomach as you inhale';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    48%{
+      content: 'keep breathing';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    56%{
+      content: 'notice your body relax';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    64%{
+      content: 'all is well';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    72%{
+      content: 'you are okay';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    80%{
+      content: 'you are abundance';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    88%{
+      content: 'you are  amazing';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    94%{
+      content: 'you heart is beautiful';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+     100%{
+      content: 'you did great ';
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+    }
+    
+  }
+  
+  
+  .observeyourbreath-box {
+    position: relative;
+    display: block;
+    width: 80px;
+    margin: 60px auto;
+    height: 150px;
+  }
+  
+  .observeyourbreath-box .delay1 {
+    animation: waves infinite  linear;
+    animation-delay: .2s;
+  }
+  
+  .observeyourbreath-box .delay2 {
+    animation: waves infinite linear .7s forwards,
+  }
+  
+  .observeyourbreath-box .delay3 {
+    animation: waves infinite  linear 1.3s forwards;
+  }
+  
+  .observeyourbreath-box .delay4 {
+    animation: waves infinite  linear 1.9s forwards;
+  }
+  
+  .svg-box {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .observeyourbreath-circle {
+    display: block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: rgb(125,164,195);
+    margin: 10px;
+    transition: 5s ease;
+    position: absolute;
+    top: 0px
+  }
+  
+  @keyframes waves {
+    0%{
+      transform: scale(2);
+      opacity: 1;
+    }
+    25%{
+        transform: scale(4);
+        opacity: 0.75;
+    }
+    50%{
+        transform:scale(6);
+        opacity: 0.50;
+    }
+    100%{
+      transform: scale(8);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes bloop {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
