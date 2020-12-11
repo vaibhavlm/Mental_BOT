@@ -1,16 +1,74 @@
 import React from 'react';
-import { Button} from 'reactstrap';
-import {Link} from 'react-router-dom';
+import { Button } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import bot1 from '../images/bot1rb.png'
+import Chip from '@material-ui/core/Chip';
+import DoneIcon from '@material-ui/icons/Done';
+
+
+const color = [
+    {
+        id: 0,
+        color: "white"
+    },
+    {
+        id: 1,
+        color: "white"
+    },
+    {
+        id: 2,
+        color: "white"
+    },
+    {
+        id: 3,
+        color: "white"
+    },
+    {
+        id: 4,
+        color: "white"
+    },
+    {
+        id: 5,
+        color: "white"
+    },
+    {
+        id: 6,
+        color: "white"
+    },
+    {
+        id: 7,
+        color: "white"
+    },
+    {
+        id: 8,
+        color: "white"
+    },
+     {
+        id: 9,
+        color: "white"
+    }
+]
 var flag = 0;
+
 
 function Screen2(props) {
 
     const button = props.problems.map(problem => {
-        return (<div key={problem.id} className="col-6 col-sm-6 col-md-3 pb-3 pb-md-5">
-            <Button onClick={() => {
-                props.Toggle(problem);
-            }} className={`card${problem.id}`}>{problem.name}</Button>
+        return (<div key={problem.id} className="col-6 col-sm-6 pl-4 pl-md-0 col-md-3 pb-3 pb-md-5">
+            <Chip
+                label={problem.name}
+                onClick={() => {
+                    color.filter(ele => ele.id == problem.id)[0].color="pink";
+                    if(!problem.selected)
+                    props.Toggle(problem);
+                }}
+                onDelete={() => {
+                    color.filter(ele => ele.id == problem.id)[0].color="white";
+                    if(problem.selected)
+                    props.Toggle(problem);
+                }}
+                style={{ backgroundColor: color.filter(ele => ele.id == problem.id)[0].color}}
+            />
         </div>);
     });
 
@@ -22,6 +80,10 @@ function Screen2(props) {
             );
         }
     });
+
+    const toggleflag = bool =>{
+        if(bool) flag=0;
+    }
 
     return (
         <section className="passage2">
@@ -36,30 +98,30 @@ function Screen2(props) {
                         <h2 className="heading-pas1-2">Add challenges you would like to tackle to your homescreen..</h2>
                     </div>
                 </div>
-                <div className="row pd-5">
-                    {button}
-                </div>
-                <div className="row py-5">
-                    <div className="col-12 col-md-6 stack">
+                <div className="row">
+                    <div className="col-12 col-md-6 pb-5 pb-md-0 pr-md-5">
                         <div className="row">
-                            <div className="col-12 pb-2">
+                        {button}
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6 pl-md-5 stack">
+                            <div className="pb-2">
                                 <h3>Challenges Selected</h3>
                             </div>
-                            <div className="col-12 col-md-6">
+                            <div>
+                                {props.problems.filter(problem => problem.selected==true).length === 0 ? toggleflag(true):null}
                                 {flag === 1 ?
                                     <>
                                         <ul>
                                             {select}
                                         </ul>
-                                        <div className="pt-3">
-                                            <Link to="/Landingpage"><Button className="btn btn-success btn-sm">Set Up..</Button></Link>
-                                        </div>
                                     </>
                                     :
                                     <h6>No problems selected</h6>}
                             </div>
-                        </div>
                     </div>
+                </div>
+                <div className="row pd-5">
                     <div className="col-12 col-md-12">
                         <div className="row justify-content-center">
                             <div className="col-12 col-md-5">
@@ -70,6 +132,9 @@ function Screen2(props) {
                                         <p><i class="fas fa-quote-left"></i> Mental health…is not a destination, but a process. It’s about how you drive, not where you’re going.  <i className="fas fa-quote-right"></i></p>
                                     </div>
                                 </div>
+                               <div className="py-3">
+                               <Link to='Landingpage'><Button className="btn btn-success btn-lg">Set up</Button></Link>
+                               </div>
                             </div>
                             <div className="col-10 col-md-7 d-none d-md-block">
                                 <img src={bot1} className="img-fluid" />

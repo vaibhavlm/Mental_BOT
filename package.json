@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.11.2",
     "@progress/kendo-react-buttons": "^3.16.0",
     "@progress/kendo-react-conversational-ui": "^3.16.0",
     "@progress/kendo-react-intl": "^3.16.0",

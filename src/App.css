@@ -75,7 +75,7 @@
 }
 
 h2 , h1{
-  color: #606060;
+  color: #606060 !important;
 }
 h3{
   color: #606060;
@@ -443,3 +443,4 @@ hr{
   background-color: rgb(247, 244, 244) !important;
   height: 1px;
 }
+
