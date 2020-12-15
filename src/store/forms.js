@@ -1,3 +1,4 @@
 export const initialFormfeedback = {
-    nickname:''
+    name:'',
+    botname:'micky'
 };

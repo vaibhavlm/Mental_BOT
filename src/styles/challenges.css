@@ -1,0 +1,141 @@
+.card0{
+    background: linear-gradient(#1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 110%) !important;
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card1{
+    background-color : #ff4e00;
+  background-image : linear-gradient( #ff4e00 0%, #ec9f05 74%);
+    height: 70px;
+    width: 110px;
+    color: #1c252d !important;
+   font-weight: 400 !important;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card2{
+    background-color: #00b712;
+  background-image: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card3{
+    background:orangered !important;
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card4{
+    background: linear-gradient(to bottom right, #f2aa92 19%, #ff8a8a 42%);
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card5{
+    background-color: #fbb034;
+  background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card6{
+    background-color: #c7e9fb;
+  background-image: linear-gradient(315deg, #c7e9fb 0%, #e61d8c 74%);
+    border: none;
+    height: 70px;
+    width: 110px;
+    color:#060604 !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card7{
+    background: linear-gradient(to top left, #ecf291 39%, #e0ff8a 82%);
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card8{
+    background-color: #e4b5cb;
+    background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card9{
+    background:rgb(250, 188, 152) !important;
+    border: none;
+    height: 70px;
+    width: 110px;
+    color: black !important;
+    font-weight: 400 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .list{
+    font-size: 17px;
+    font-weight: 500;
+    color: #020202;
+    padding-bottom: 0.5em;
+  }
+  .stack{
+   padding-bottom: 250px;
+   min-height: 300px;
+   max-height: 500px;
+  }
+  .child{
+    background:#4d6e7f !important;
+    color:#e8dcde !important;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  

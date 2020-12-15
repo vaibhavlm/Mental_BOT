@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'font-awesome/css/font-awesome.css';
 import 'antd/dist/antd.css'; 
+import 'react-notifications-component/dist/theme.css';
 import Main from './components/Main';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';

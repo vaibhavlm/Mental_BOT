@@ -6,7 +6,8 @@ import bot3 from '../images/bot32rb.png';
 import img1 from '../images/img1.png';
 import '../styles/quote-card.css';
 import { Carousel } from 'antd';
-
+import ReactNotification, { store } from 'react-notifications-component';
+import ReactNotifications from 'react-browser-notifications';
 const contentStyle = {
     height: '260px',
     color: '#fff',
@@ -22,46 +23,65 @@ class Screen1 extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            next: true
-        }
     }
+
+    handleNotification() {
+        store.addNotification({
+            title: "Updated !!",
+            message: "Names saved",
+            type: "success",
+            container: "top-center",
+            insert: "top",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
+
+            dismiss: {
+                duration: 1000,
+                onScreen: true
+            }
+        })
+    }
+
+
     handlesubmit(value, changeName, changeBotName) {
-        this.setState({
-            next: !this.state.next
-        });
-        changeName(value.name);
-        if (value.botname != null) changeBotName(value.botname);
-        alert("Names updated");
-        window.scrollTo(0, 1000);
+        this.handleNotification();
+        
+        setTimeout(() => {
+            changeName(value.name);
+            if (value.botname != null) changeBotName(value.botname);
+                window.scrollTo(0, 1000);
+                this.props.resetform();
+            }, 2000);
     }
+
 
     render() {
         return (
             <section className="screen1">
                 <div className="container">
+                    <ReactNotification />
                     <div className="row py-5">
-                       <div className="col-12 col-md-6">
-                       <h1 className="text-center pb-2">Let's Begin..</h1>
-                       </div>
+                        <div className="col-12 col-md-6">
+                            <h1 className="text-center pb-2">Let's Begin..</h1>
+                        </div>
                     </div>
                     <div className="row">
-                    <div className="col-12 col-md-6 pb-5 pl-5 pb-md-0">
+                        <div className="col-12 col-md-6 pb-5 pl-5 pb-md-0">
                             <div className=" pl-5 d-none d-md-block">
                                 <Carousel effect="fade" autoplay="true" dotPosition="left">
                                     <div className="pl-5">
-                                    <blockquote className="quote-card">
+                                        <blockquote className="quote-card">
                                             <p className="quotes">It is only in sorrow bad weather masters us; in joy we face the storm and defy it.</p>
                                             <cite>
-                                              Amelia Barr
+                                                Amelia Barr
                                             </cite>
                                         </blockquote>
                                     </div>
                                     <div className="pl-5">
                                         <blockquote class="quote-card">
-                                        <p className="quotes">I fight for my health every day in ways most people don’t understand. I’m not lazy. I’m a warrior.</p>
+                                            <p className="quotes">I fight for my health every day in ways most people don’t understand. I’m not lazy. I’m a warrior.</p>
                                             <cite>
-                                                
+
                                             </cite>
                                         </blockquote>
                                     </div>
@@ -73,8 +93,8 @@ class Screen1 extends Component {
                                             </cite>
                                         </blockquote>
                                     </div>
-                                     <div className="pl-5">
-                                    <blockquote className="quote-card">
+                                    <div className="pl-5">
+                                        <blockquote className="quote-card">
                                             <p className="quotes">Some of the most comforting words in the universe are ‘me too.’ That moment when you find out that your struggle is also someone else’s struggle, that you’re not alone, and that others have been down the same road.</p>
                                             <cite>
 
@@ -83,17 +103,17 @@ class Screen1 extends Component {
                                     </div>
                                     <div className="pl-5">
                                         <blockquote class="quote-card">
-                                        <p className="quotes">You, Yourself, as much as anybody in the entire universe deserve your love and affection.</p>
+                                            <p className="quotes">You, Yourself, as much as anybody in the entire universe deserve your love and affection.</p>
                                             <cite>
-                                               The Buddha 
+                                                The Buddha
                                             </cite>
                                         </blockquote>
                                     </div>
                                     <div className="pl-5">
                                         <blockquote class="quote-card">
-                                        <p className="quotes">Not until we are lost, do we begin to understand ourselves.</p>
+                                            <p className="quotes">Not until we are lost, do we begin to understand ourselves.</p>
                                             <cite>
-                                               Henry David Thoreau  
+                                                Henry David Thoreau
                                             </cite>
                                         </blockquote>
                                     </div>
