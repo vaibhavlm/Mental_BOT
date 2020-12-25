@@ -27,8 +27,7 @@ function Screen2(props) {
                     onDelete={() => {
                         props.Toggle(problem);
                     }}
-                    className="mb-2 mb-md-0 mr-1"    
-                     />
+                    className="mb-2 mb-md-0 mr-1" />
             );
         }
     });

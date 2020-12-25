@@ -6,7 +6,7 @@
 
   #pills-observeyourbreath-para{
     min-height: 50px;
-    padding-bottom: 70px !important;
+    padding-bottom: 100px !important;
   }
   
   #pills-observeyourbreath-para::before{
@@ -102,20 +102,20 @@
   }
   
   .observeyourbreath-box .delay1 {
-    animation: waves infinite  linear;
-    animation-delay: .2s;
+    animation: waves infinite linear 2.0s forwards;
+    animation-delay: 0.4s;
   }
   
   .observeyourbreath-box .delay2 {
-    animation: waves infinite linear .7s forwards,
+    animation: waves infinite linear 2.8s forwards;
   }
   
   .observeyourbreath-box .delay3 {
-    animation: waves infinite  linear 1.3s forwards;
+    animation: waves infinite linear 3.4s forwards;
   }
   
   .observeyourbreath-box .delay4 {
-    animation: waves infinite  linear 1.9s forwards;
+    animation: waves infinite linear 3.8s forwards;
   }
   
   .svg-box {

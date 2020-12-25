@@ -6,14 +6,14 @@
 
   #pills-halooflove-para{
     min-height: 50px;
-    padding-bottom: 50px !important;
+    padding-bottom: 100px !important;
   }
   
   #pills-halooflove-para::before{
     content: '';
     color: whitesmoke;
     letter-spacing: .1em;
-    font-weight: 500;
+    font-weight: 700;
     animation: rotator1 infinite 120s;
   }
   
@@ -101,20 +101,22 @@
   }
   
   .halooflove-box .delay1 {
-    animation: waves infinite linear .7s forwards;
-    animation-delay: .1s;
+    animation: waves infinite linear 2.0s forwards;
+    animation-delay: 0.4s;
   }
   
   .halooflove-box .delay2 {
-    animation: waves infinite linear 1.3s forwards,
+    animation: waves infinite linear 2.8s forwards;
+    animation-delay: 0.4s;
   }
   
   .halooflove-box .delay3 {
-    animation: waves infinite linear 1.9s forwards;
+    animation: waves infinite linear 3.9s forwards;
+    animation-delay: 0.4s;
   }
   
   .halooflove-box .delay4 {
-    animation: waves infinite linear 2.4s forwards;
+    animation: waves infinite linear 4.4s forwards;
   }
   
   .svg-box {
@@ -131,54 +133,25 @@
     margin: 10px;
     transition: 5s ease;
     position: absolute;
-    top: 0px
+    top: 0px;
   }
   
   @keyframes waves {
     0%{
-      transform: scale(1);
+      transform: scale(0.1);
       opacity: 1;
     }
     25%{
-        transform: scale(2);
+        transform: scale(0.2);
         opacity: 0.75;
     }
     50%{
-        transform:scale(3);
+        transform:scale(0.3);
         opacity: 0.50;
     }
     100%{
-      transform: scale(4);
+      transform: scale(0.4);
       opacity: 0;
     }
   }
   
-  @keyframes bloop {
-    0% {
-      transform: scale3d(1, 1, 1);
-    }
-  
-    30% {
-      transform: scale3d(1.25, 0.75, 1);
-    }
-  
-    40% {
-      transform: scale3d(0.75, 1.25, 1);
-    }
-  
-    50% {
-      transform: scale3d(1.15, 0.85, 1);
-    }
-  
-    65% {
-      transform: scale3d(.95, 1.05, 1);
-    }
-  
-    75% {
-      transform: scale3d(1.05, .95, 1);
-    }
-  
-    100% {
-      transform: scale3d(1, 1, 1);
-    }
-  }

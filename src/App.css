@@ -29,25 +29,6 @@
  min-height: 100vh;
 }
 
-.splash{
-  position: fixed;
-  top:0;
-  left: 0;
-  background:url("/assets/bot4.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  height:100vh;
-  width: 100%;
-  z-index: 200;
-  text-align: center;
-  line-height: 5em;
-  opacity: 1;
-  animation: splashIn 2s ease-in-out forwards
-}
-
-
-
 @keyframes splashIn{
   to{
     opacity: 0;
@@ -85,7 +66,7 @@ h3{
   padding-top: 250px;
 }
 .heading-1{
-  color: #000;
+  color: #000 !important;
   font-size: 30px;
   padding-bottom: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -186,6 +167,10 @@ h3{
 .link{
   color: black !important;
   padding-left: 10em !important;
+}
+.links{
+  color: black !important;
+  padding-left: 28em !important;
 }
 
 .page-enter {

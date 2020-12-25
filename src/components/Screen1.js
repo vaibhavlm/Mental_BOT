@@ -7,15 +7,7 @@ import img1 from '../images/img1.png';
 import '../styles/quote-card.css';
 import { Carousel } from 'antd';
 import ReactNotification, { store } from 'react-notifications-component';
-import ReactNotifications from 'react-browser-notifications';
-const contentStyle = {
-    height: '260px',
-    color: '#fff',
-    textAlign: 'center',
-    background: '#364d79',
-    fontWeight: "500",
-    paddingTop: "100px"
-};
+
 
 const required = (val) => val && val.length;
 
@@ -30,14 +22,13 @@ class Screen1 extends Component {
             title: "Updated !!",
             message: "Names saved",
             type: "success",
-            container: "top-center",
-            insert: "top",
+            container: "bottom-left",
+            insert: "bottom",
             animationIn: ["animated", "fadeIn"],
             animationOut: ["animated", "fadeOut"],
 
             dismiss: {
                 duration: 1000,
-                onScreen: true
             }
         })
     }
@@ -95,7 +86,7 @@ class Screen1 extends Component {
                                     </div>
                                     <div className="pl-5">
                                         <blockquote className="quote-card">
-                                            <p className="quotes">Some of the most comforting words in the universe are ‘me too.’ That moment when you find out that your struggle is also someone else’s struggle, that you’re not alone, and that others have been down the same road.</p>
+                                            <p className="quotes">Everyday begins with an act of courage and hope, getting out of bed</p>
                                             <cite>
 
                                             </cite>

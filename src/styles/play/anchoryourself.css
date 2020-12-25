@@ -6,7 +6,7 @@
 
   #pills-anchoryourself-para{
     min-height: 50px;
-    padding-bottom: 70px !important;
+    padding-bottom: 100px !important;
   }
   
   #pills-anchoryourself-para::before{
@@ -102,20 +102,22 @@
   }
   
   .anchoryourself-box .delay1 {
-    animation: waves infinite  linear;
-    animation-delay: .2s;
+    animation: waves infinite linear 2.0s forwards;
+    animation-delay: 0.4s;
   }
   
   .anchoryourself-box .delay2 {
-    animation: waves infinite linear .7s forwards,
+    animation: waves infinite linear 2.8s forwards;
+    animation-delay: 0.2s;
   }
   
   .anchoryourself-box .delay3 {
-    animation: waves infinite  linear 1.3s forwards;
+    animation: waves infinite linear 3.9s forwards;
+    animation-delay: 0.1s;
   }
   
   .anchoryourself-box .delay4 {
-    animation: waves infinite  linear 1.9s forwards;
+    animation: waves infinite linear 4.4s forwards;
   }
   
   .svg-box {
@@ -128,7 +130,7 @@
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    background: rgb(179, 243, 160);
+    background: rgb(169, 245, 148);
     margin: 10px;
     transition: 5s ease;
     position: absolute;

@@ -23,11 +23,11 @@ function FinalScreen(props) {
                             <NavLink className="nav-link link" to='/start'>Reset Data</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link link" to='/menu'>Dashboard</NavLink>
+                            <NavLink className="nav-link link" to='/Landingpage'>Dashboard</NavLink>
                         </NavItem>
                         <UncontrolledDropdown className="dropdown">
                             <DropdownToggle nav caret>
-                                <span className="fa fa-cog link"> Settings</span>
+                                <span className="fa fa-cog links"> Settings</span>
                             </DropdownToggle>
                             <DropdownMenu right id="dropdown">
                                 <DropdownItem>
