@@ -32,7 +32,22 @@ class Screen1 extends Component {
             }
         })
     }
+ 
+     handlevalidation(){
+        store.addNotification({
+            title: "Error !!",
+            message: "Name not entered",
+            type: "danger",
+            container: "bottom-left",
+            insert: "bottom",
+            animationIn: ["animated", "fadeIn"],
+            animationOut: ["animated", "fadeOut"],
 
+            dismiss: {
+                duration: 1000,
+            }
+        })
+     }
 
     handlesubmit(value, changeName, changeBotName) {
         this.handleNotification();
@@ -69,7 +84,7 @@ class Screen1 extends Component {
                                         </blockquote>
                                     </div>
                                     <div className="pl-5">
-                                        <blockquote class="quote-card">
+                                        <blockquote className="quote-card">
                                             <p className="quotes">I fight for my health every day in ways most people don’t understand. I’m not lazy. I’m a warrior.</p>
                                             <cite>
 
@@ -148,7 +163,7 @@ class Screen1 extends Component {
                         </div>
                     </div>
                     <div className="col-12 pb-5 text-center">
-                        <Link to="screen2"><i className="fa fa-chevron-down fa-lg " style={{ color: "steelblue" }}></i></Link>
+                        {this.props.name.username=="" ? <i className="fa fa-chevron-down fa-lg " style={{ color: "steelblue" }} onClick={()=>this.handlevalidation()}></i> :  <Link to="screen2"><i className="fa fa-chevron-down fa-lg " style={{ color: "steelblue" }}></i></Link>}
                     </div>
                 </div>
             </section>

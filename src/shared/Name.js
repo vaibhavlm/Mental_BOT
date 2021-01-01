@@ -1,4 +1,4 @@
 export const NAME= {
-    username : "Vaibhav",
+    username : "",
     botname : "mentabot"
 }

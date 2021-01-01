@@ -95,10 +95,10 @@ function Screen2(props) {
                         <div className="row justify-content-center">
                             <div className="col-12 col-md-5">
                                 <div className="card child">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Did You Know??</h4>
+                                    <div className="card-body">
+                                        <h4 className="card-title">Did You Know??</h4>
                                         <hr />
-                                        <p><i class="fas fa-quote-left"></i> Mental health…is not a destination, but a process. It’s about how you drive, not where you’re going.  <i className="fas fa-quote-right"></i></p>
+                                        <p><i className="fas fa-quote-left"></i> Mental health…is not a destination, but a process. It’s about how you drive, not where you’re going.  <i className="fas fa-quote-right"></i></p>
                                     </div>
                                 </div>
                                 <div className="py-3">

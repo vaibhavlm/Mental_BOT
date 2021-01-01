@@ -40,7 +40,7 @@ class Main extends Component {
                     <CSSTransition key={this.props.location.key} classNames="page" timeout={2000}>
                         <Switch>
                             <Route path="/start" component={() => <Start />} />
-                            <Route path="/screen1" component={() => <Screen1 changeName={this.props.changeName} changeBotName={this.props.changeBotName} resetform={this.props.resetform} />} />
+                            <Route path="/screen1" component={() => <Screen1 changeName={this.props.changeName} changeBotName={this.props.changeBotName} resetform={this.props.resetform} name={this.props.name}/>} />
                             <Route path="/screen2" component={() => <Screen2 problems={this.props.problems} Toggle={this.props.Toggle} />} />
                             <Route path="/Landingpage" component={() => <FinalScreen name={this.props.name} problems={this.props.problems} />} />
                             <Route path="/bot" component={() => <Bot />} />
