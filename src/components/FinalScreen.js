@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { Card, CardContent, Button } from '@material-ui/core';
 import { Navbar, NavItem, NavbarToggler, Collapse, Nav, NavbarBrand, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, CardImg, CardText, CardBody } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import bot2 from '../images/bot4.png'
 
+
+function handleReset(resetName){
+     resetName();
+}
 
 
 function FinalScreen(props) {
@@ -20,7 +24,7 @@ function FinalScreen(props) {
                             <NavLink className="nav-link link" to='/Landingpage'>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link link" to='/start'>Reset Data</NavLink>
+                            <Link className="nav-link link" onClick={()=>handleReset(props.resetName)} to='/start'>Reset Data</    Link>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link link" to='/Landingpage'>Dashboard</NavLink>

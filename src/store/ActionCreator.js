@@ -15,3 +15,7 @@ export const changeBotName = (name)=>({
     type : ActionTypes.CHANGE_BOTNAME,
     payload : name
 })
+
+export const ResetName = ()=>({
+    type : ActionTypes.RESET_NAME
+})

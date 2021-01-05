@@ -8,6 +8,8 @@ export const Name = (state = NAME,action)=>{
             return {...state , username:name};
         case ActionTypes.CHANGE_BOTNAME:
             return {...state, botname:action.payload};
+         case ActionTypes.RESET_NAME:
+             return {...state, username:NAME.username, botname:NAME.botname};   
          default: return state;
     }
 }
