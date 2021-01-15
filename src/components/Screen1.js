@@ -15,6 +15,8 @@ class Screen1 extends Component {
 
     constructor(props) {
         super(props);
+        console.log(this.props.name);
+        console.log(this.props.problems);
     }
 
     handleNotification() {

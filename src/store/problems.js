@@ -8,7 +8,10 @@ export const Problems = (state = PROBLEMS, action)=>{
           const problem = action.payload;
           problem.selected = !problem.selected;
           return Object.assign([],state,{[problem.id]:problem});
-
+      case ActionType.RESET_CHALLENGES:  state.map(problem=> {
+        problem.selected == true ? problem.selected=!problem.selected : problem.selected=problem.selected
+      })
+      return state;
           default: return state;
   }
 

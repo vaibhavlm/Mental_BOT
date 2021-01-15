@@ -6,7 +6,8 @@ import { NavLink } from 'react-router-dom';
 import bot2 from '../images/bot4.png'
 
 
-function handleReset(resetName){
+function handleReset(resetName, resetChallenges){
+    resetChallenges();
      resetName();
 }
 
@@ -24,11 +25,12 @@ function FinalScreen(props) {
                             <NavLink className="nav-link link" to='/Landingpage'>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <Link className="nav-link link" onClick={()=>handleReset(props.resetName)} to='/start'>Reset Data</    Link>
+                            <Link className="nav-link link" onClick={()=>handleReset(props.resetName, props.resetChallenges)} to='/start'>Reset Data</    Link>
                         </NavItem>
                         <NavItem>
                             <NavLink className="nav-link link" to='/Landingpage'>Dashboard</NavLink>
                         </NavItem>
+                        <NavItem>
                         <UncontrolledDropdown className="dropdown">
                             <DropdownToggle nav caret>
                                 <span className="fa fa-cog links"> Settings</span>
@@ -42,6 +44,7 @@ function FinalScreen(props) {
                                 </DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Navbar>

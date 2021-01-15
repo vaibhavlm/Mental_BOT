@@ -19,3 +19,7 @@ export const changeBotName = (name)=>({
 export const ResetName = ()=>({
     type : ActionTypes.RESET_NAME
 })
+
+export const ResetChallenges = ()=>({
+    type : ActionTypes.RESET_CHALLENGES
+})
